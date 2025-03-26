@@ -29,10 +29,10 @@ Return the optimal policy and the optimal value function.
 ### Register Number: 212222240055
 ### PROGRAM
 ```py
-desc=['FFSH','FFFH','HFFH','FHGF']
-env = gym.make('FrozenLake-v1',desc=desc)
+envdesc  = ['SFHF','FHFF','GFHF', 'FFFH']
+env = gym.make('FrozenLake-v1',desc=envdesc)
 init_state = env.reset()
-goal_state = 14
+goal_state = 8
 P = env.env.P
 ```
 ```py
@@ -53,12 +53,18 @@ def value_iteration(P, gamma=1.0, theta=1e-10):
 
 ## OUTPUT:
 
-
-![Screenshot 2025-03-21 141326](https://github.com/user-attachments/assets/3817dfdd-0bfe-422f-9870-87403852c0e8)
-
+![Screenshot 2025-03-26 110938](https://github.com/user-attachments/assets/8b14d0d9-5233-485e-ab77-8da8e2cb893d)
 
 
-![Screenshot 2025-03-21 141334](https://github.com/user-attachments/assets/3410b981-2166-4f61-88c4-e1e6e8660839)
+
+![Screenshot 2025-03-26 111039](https://github.com/user-attachments/assets/5bea8b5a-24a1-4edd-8b2e-f837f743627b)
+
+
+
+
+
+![Screenshot 2025-03-26 111044](https://github.com/user-attachments/assets/d742cc9e-cff9-482a-816f-216a65869164)
+
 
 
 
